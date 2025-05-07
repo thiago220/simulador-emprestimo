@@ -18,7 +18,7 @@ A aplicação permite simular empréstimos com base em instituições financeira
 ## Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/simulador-emprestimo.git
+git clone https://github.com/thiago220/simulador-emprestimo.git
 cd simulador-emprestimo
 
 composer install
