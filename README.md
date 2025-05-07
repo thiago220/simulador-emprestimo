@@ -31,7 +31,7 @@ php artisan serve
 
 ---
 
-## 🔌 Endpoints da API
+## Endpoints da API
 
 ### `GET /api/v1/instituicoes`
 Lista todas as instituições disponíveis.
