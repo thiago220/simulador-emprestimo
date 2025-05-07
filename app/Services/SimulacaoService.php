@@ -30,8 +30,8 @@ class SimulacaoService
                     'taxaJuros' => $item['taxaJuros'],
                     'valor_parcela' => $valorParcela,
                     '_links' => [
-                        'instituicao' => '/api/instituicoes/' . $item['instituicao'],
-                        'convenio' => '/api/convenios/' . $item['convenio'],
+                        'instituicao' => '/api/v1/instituicoes/' . $item['instituicao'],
+                        'convenio' => '/api/v1/convenios/' . $item['convenio'],
                     ]
                 ];
             }

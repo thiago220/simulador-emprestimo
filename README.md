@@ -68,8 +68,8 @@ Simula um empréstimo.
     "taxaJuros": 2.05,
     "valor_parcela": 260.4,
     "_links": {
-      "instituicao": "/api/instituicoes/BMG",
-      "convenio": "/api/convenios/INSS"
+      "instituicao": "/api/v1/instituicoes/BMG",
+      "convenio": "/api/v1/convenios/INSS"
     }
   }
 ]
