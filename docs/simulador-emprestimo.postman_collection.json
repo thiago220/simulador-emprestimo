@@ -1,0 +1,89 @@
+{
+  "info": {
+    "name": "Simulador de Empréstimo API",
+    "_postman_id": "simulador-emprestimo-id",
+    "description": "Coleção para testar a API RESTful nível 3 do simulador de empréstimo.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar Instituições",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/v1/instituicoes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "instituicoes"]
+        }
+      }
+    },
+    {
+      "name": "Detalhar Instituição",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/v1/instituicoes/BMG",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "instituicoes", "BMG"]
+        }
+      }
+    },
+    {
+      "name": "Listar Convênios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/v1/convenios",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "convenios"]
+        }
+      }
+    },
+    {
+      "name": "Detalhar Convênio",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/v1/convenios/INSS",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "convenios", "INSS"]
+        }
+      }
+    },
+    {
+      "name": "Simular Empréstimo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"valor_emprestimo\": 10000,\n  \"instituicoes\": [\"BMG\"],\n  \"convenios\": [\"INSS\"],\n  \"parcela\": 72\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/v1/simulacoes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["api", "simulacoes"]
+        }
+      }
+    }
+  ]
+}

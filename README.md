@@ -79,7 +79,7 @@ Simula um empréstimo.
 
 ## Testes com Postman
 
-Importe o arquivo `simulador-emprestimo.postman_collection.json` no Postman para testar todas as rotas.
+Importe o arquivo `docs/simulador-emprestimo.postman_collection.json` no Postman para testar todas as rotas.
 
 ---
 
